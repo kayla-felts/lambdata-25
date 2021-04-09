@@ -31,20 +31,20 @@ class Complex:
 def __repr__(self):
     return '{},{}'.format(self.r,self.i)
 
-# class SocialMediaUser:
-#     def __init__(self, name, location, upvotes=0, secondary_upvotes=0, total_upvotes):
-#         self.name = name
-#         self.location = location
-#         self.upvotes = upvotes
-#         self.secondary_upvotes = upvotes + secondary_upvotes
-#         self.total_upvotes = upvotes + secondary_upvotes
+class SocialMediaUser:
+    def __init__(self, name, location, upvotes=0, secondary_upvotes=0, total_upvotes):
+        self.name = name
+        self.location = location
+        self.upvotes = upvotes
+        self.secondary_upvotes = upvotes + secondary_upvotes
+        self.total_upvotes = upvotes + secondary_upvotes
 
-#     def recieve_upvotes(self, num_upvotes):
-#         self.upvote += int(num_upvotes)
+    def recieve_upvotes(self, num_upvotes):
+        self.upvote += int(num_upvotes)
         
 
-#     def is_popular(self):
-#         return self.total_upvotes > 100
+     def is_popular(self):
+       return self.total_upvotes > 100
 
 class Animal:
     ''''General representation of an animal'''
